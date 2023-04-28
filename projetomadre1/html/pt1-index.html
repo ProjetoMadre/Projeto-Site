@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Academia do Conhecimento</title>
+    <meta charset="UTF-8">
+	<style>
+		/* Estilos para o menu */
+		*{
+			margin: 0;
+			padding: 0;
+			border: 0;/* o solid aparece os textos dentro de um bloco*/
+			font-family: 'sofia sans', sans-serif;
+		}
+/* define o estilo das caixas que contem os itens do menu */
+/*space-evenly - distribui o texto igualmente*/
+ul {
+	display: flex;
+	justify-content: space-evenly;/*space-around - distribui o texto colocando espaço envolta do elemento*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+/* define o posicionamento das caixas que contem os itens do menu */
+li a {
+	display: block;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	text-decoration: none; /* se tirar fica sublinhado*/
+	font-size: 16px;
+	font-weight: bold; /*negrito*/
+	padding: 12px 25px;
+	height: 20px;
+	width: 150px;
+	
+}
+/* cor que aparece quando desliza o mouse sobre o menu */
+li a:hover {
+	background-color: #8f8d8d;
+	border-radius: 20px;
+	transition: opacity 0.7s;
+	z-index: -1;
+}
+
+div > h1 {
+	display: none;
+	cursor: pointer;
+	-webkit-transition: 0.4s ease-out;
+	-moz-transition: 0.2s;
+
+	
+}
+div:hover > h1{
+	color: #090909;
+	background-color: #fffdfd;
+	display: flex ;
+}
+
+
+/* Estilos para as dicas de ferramentas */
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+/* se refere a barra cinza do menu e os botoes mude aqui */
+.botaoleitura {
+	visibility: hidden;
+	width: 120px;
+	font-size: 20px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: -1;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.7s;
+}
+
+/* o que aparece quando desliza o mouse sobre o menu */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;	
+}
+
+/* Estilos para o corpo da página */
+body {
+	background-color: #112244; /* Fundo azul escuro */
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+.header {
+	background-color: #112244;
+	padding: 60px 20px 60px 20px;
+	text-align: left;
+	column-count: 2;
+	text-align: center;
+}
+
+/* Estilos da logo do site */
+.logo {
+	display: inline-block;
+	height: 330px;
+	width: 440px;
+	border-radius: 30px;
+	padding: 0px;
+	margin-left: 0px;
+}
+
+/* Estilos da imagem tela principal do curso */
+.telaprincipal {
+	display: inline-block;
+	height: 350px;
+	width: 1335px;
+	border-radius: 0px;
+	padding: 0px;
+	margin-left: 0px;
+}
+
+.Descrição{
+    text-align: left;
+    padding: 75px 130px;
+    font-family: arial;
+}
+
+
+		a{
+			padding: 10px 35px;
+			font-size: 12px;
+			font-family: arial;
+			color: #fff;
+		}
+		/* Estilos da matriz curricular */
+		.matriz {
+			display: inline-block;
+			font-size: 60px;
+			height: 30px;
+			width: 150px;
+			text-align: center;
+		}
+		.pequena {
+			display: inline-block;
+			font-size: 15px;
+			text-align: center;
+			height: 30px;
+			width: 150px;
+			padding-left: 70px;
+		}
+		h1{
+			position: absolute;
+			right: 39%;
+			top: 22%;
+			font-family: arial;
+		}
+		/* Estilos dos períodos*/
+		.periodo {
+			display: inline-block;
+			font-size: 20px;
+			font-weight: middle;
+			vertical-align: top;
+			padding: 10px 150px 10px 20px;
+			background-color: #112244;
+			text-align: left;
+			width: 450px;
+		}
+		.periodos {
+			display: inline-block;
+			font-size: 20px;
+			font-weight: middle;
+			vertical-align: top;
+			background-color: #576E7A;
+			text-align: left;
+			padding: 10px 150px 10px 20px;
+			width: 450px;
+		}
+		footer{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 2.5rem;
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+    <div id="container">
+	<h5> Acessibilidade </h5>
+    </div>
+	<!-- Menu principal -->
+    <nav>
+	    <ul>
+		    <label class="tooltip"><a href="pt1-index.html" title="muda aqui">Home</a>
+				<span class="botaoleitura">teste</span></li>
+			<li class="tooltip"><div>
+				<a href="" >Quem somos</a> <h1>texto academia do conhecimento</h1>
+					<span class="botaoleitura">muda aqui</span>
+			</div></li>
+			<li class="tooltip"><a href="pt3-graduacao.html" title="texto academia do conhecimento">Graduação</a>
+				<span class="botaoleitura">texto academia do conhecimento</span></li>
+			<li class="tooltip"><a href="pt4-pos_graduacao.html" title="muda aqui">Pós-graduação</a>
+				<span class="botaoleitura">muda aqui</span></li>
+			<li class="tooltip"><a href="pt5-tecnico.html" title="muda aqui">Cursos Técnicos</a>
+				<span class="botaoleitura">muda aqui</span></li>
+			<li class="tooltip"><a href="login.html" title="muda aqui">Login</a></li>
+	    </ul>
+        <!-- Cabeçalho da página -->
+        <div class="logo">
+			<figure><img src="../html/img/ACADEMIA DO CONHECIMENTO (4).png" alt="imagemlogo" class="logo"></figure>
+		</div>
+		<div
+			<p class="matriz"><code>Academia do Conhecimento</code></p>
+			<br>
+		</div>
+		<div
+			<p class="pequena"><code>Aprenda do seu jeito, onde você estiver.</code></p>
+			<br>
+		</div>
+		
+		<div>
+        </div>
+		<div class="telaprincipal">
+			<figure><img src="../html/img/principal.jpg" alt="imagemtelaprincipal" class="telaprincipal"></figure>
+		<div>
+    </nav>
+    </header>
+    <section>
+    <aside>
+    </aside>
+    <article>
+    </article>
+    <footer>
+    </footer>
+    </section>
+</div>
+</body>
+</html>

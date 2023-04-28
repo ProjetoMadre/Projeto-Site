@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Academia CSSinterno</title>
+    <meta charset="UTF-8">
+	<!--<link rel="stylesheet" href="cursos.css">-->
+	 <style>
+		/* Estilos para o menu */
+		*{
+			margin: 0;
+			padding: 0;
+			border: 0;/* o solid aparece os textos dentro de um bloco*/
+			font-family: 'sofia sans', sans-serif;
+		}
+		/* define o estilo das caixas que contem os itens do menu */
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #fff;
+			
+		}
+		
+		/* define o posicionamento das caixas que contem os itens do menu */
+		li a {
+			display: inline-block;
+			color: rgb(0, 0, 0);
+			text-align: center;
+			text-decoration: none; /* se tirar fica sublinhado*/
+			padding: 12px 90px ;
+			
+			
+		}
+		/* cor que aparece quando desliza o mouse sobre o menu */
+		li a:hover {
+			background-color: #474747;
+		}
+		/* Estilos para as dicas de ferramentas */
+		.tooltip {
+			position: relative;
+			display: inline-block;
+		}
+
+		/* se refere a barra cinza do menu e os botoes mude aqui */
+		.tooltip .tooltiptext {
+			visibility: hidden;
+			width: 120px;
+			background-color: black;
+			color: #fff;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px 0;
+			position: absolute;
+			z-index: 1;
+			bottom: 100%;
+			left: 0%;
+			margin-left: -60px;
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+
+		/* o que aparece quando desliza o mouse sobre o menu */
+		.tooltip:hover .tooltiptext {
+			visibility: visible;
+			opacity: 1;
+		}
+	
+			/* Estilos para o corpo da página */
+		body {
+			background-color: #112244; /* Fundo azul escuro */
+			color: #fff;
+			margin: 0;
+			padding: 0;
+		}
+	
+			/* Estilos geral da logo do curso e matriz curricular */
+		.header {
+			background-color: #112244;
+			padding: 80px 20px 60px 20px;
+			text-align: left;
+			column-count: 2;
+			}
+
+			/* Estilos da logo do curso */
+		.figure {
+			display: inline-block;
+			height: 380px;
+			width: 550px;
+			border-radius: 30px;
+			padding: 0px 20px 20px 20px;
+			margin-left: 60px;
+		}
+
+		/* Estilos da matriz curricular */
+		.matriz {
+			display: inline-block;
+			font-size: 30px;
+			font-weight: middle;
+			vertical-align: top;
+			background-color: #576E7A;
+			height: 55px;
+			width: 500px;
+			text-align: left;
+			padding: 20px 100px 10px 20px;
+		}
+		/* Estilos dos períodos*/
+		.periodo {
+			display: inline-block;
+			font-size: 25px;
+			font-weight: middle;
+			vertical-align: top;
+			padding: 10px 150px 10px 20px;
+			background-color: #112244;
+			text-align: left;
+			width: 450px;
+		}
+		.periodos {
+			display: inline-block;
+			font-size: 25px;
+			font-weight: middle;
+			vertical-align: top;
+			background-color: #576E7A;
+			text-align: left;
+			padding: 10px 150px 10px 20px;
+			width: 450px;
+		}
+
+		/* estilo do texto descricao do curso */
+		.article {
+			display: inline-block;
+			font-size: 25px;
+			vertical-align: top;
+			padding: 20px 200px 20px 100px;
+			text-align: justify;
+		}
+
+		/* estilo do texto matricule-se */
+		.matricula {
+			font-size: 15px;
+			vertical-align: top;
+			text-align: center;
+			padding-left: -20px;
+			padding-top: 8px;
+			width: 10px 10px 10px 10px;
+			background-color: #929292;
+			position: absolute;
+			/* posicao da caixa do texto matricule-se */
+			border-radius: 10px;
+			left: 86.2%;
+			right: 3.91%;
+			top: 92.31%;
+			bottom: 3.61%;
+		}
+
+	</style>
+</head>
+
+<body>
+    <div id="container">
+	<h5> Acessibilidade </h5>
+    </div>
+	<!-- Menu principal -->
+    	<nav>
+			<ul>
+				<li class="tooltip"><a href="quem-somos" title="muda aqui">Quem somos</abbr></a>
+					<span class="tooltiptext">muda aqui</span></li>
+				<li class="tooltip"><a href="graduacao" title="muda aqui">Graduação</a>
+					<span class="tooltiptext">muda aqui</span></li>
+				<li class="tooltip"><a href="pos-graduacao" title="muda aqui">Pós-graduação</a>
+					<span class="tooltiptext">muda aqui</span></li>
+				<li class="tooltip"><a href="cursos-tecnicos" title="muda aqui">Cursos Técnicos</a>
+					<span class="tooltiptext">muda aqui</span></li>
+				<li style="float:right"><a href="login" title="muda aqui">Login</a></li>
+			</ul>
+		</nav>
+	
+        <!-- matriz curricular / display none o texto nao aparece na tela-->
+	<header>     
+	<div>
+		<div class="header">
+			<figure><img src="img/periciacontabil.jpg" alt="logo periciacontabil" class="figure"></figure>
+		<div>
+			<p class="matriz"><code>Matriz Curricular</code></p>
+			<br>
+			<p class="periodo"><code>1° Período</code> 
+				<!--<p id="disciplinas" style="display: none;" > nomes das disciplinas</p>-->
+				<button class="btn" >clique aqui </button>
+				<script>
+					document.querySelectorAll('.btn').forEach((item) => {item.addEventListener('click',() => {alert ('matematica')})})
+				</script>
+			</p>
+			<br>
+			<p class="periodos"><code>2° Período</code> </p>
+			<br>						
+			<p class="periodo"><code>3° Período</code> </p>
+			
+
+		</div>
+		</div>	
+	</div>
+	</header>  
+    <section>
+    <aside>
+	</aside>
+    <article>
+        <div>			
+			<div class="article">
+				<p><ins>DESCRIÇÃO DO CURSO</ins></p>
+				<br>
+				<P><code>O objetivo da perícia contábil é apresentar a verdade dos fatos econômicos,
+								comerciais, tributários, <br> previdenciários, financeiros, trabalhistas, fiscais
+								 e administrativos, segundo cada caso e segundo o <br> que está pleiteado na inicial
+					</code> </P>
+			</div>
+			<div class="matricula">
+				<P> <a href="telamatricula.html"> <code>MATRICULE-SE</code> </a> </P>
+			</div>
+		</div>
+    </article>
+    <footer>
+    </footer>
+    </section>
+
+</body>
+</html>
+

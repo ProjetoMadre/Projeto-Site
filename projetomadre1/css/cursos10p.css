@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* Estilos para o menu */
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0; /*o solid aparece os textos dentro de um bloco*/
+	font-family: 'sofia sans', sans-serif;
+	
+
+}
+/* define o estilo das caixas que contem os itens do menu */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fff;
+	
+}
+
+/* define o posicionamento das caixas que contem os itens do menu */
+li a {
+	display: inline-block;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	text-decoration: none; /* se tirar fica sublinhado*/
+	padding: 12px 70px ;
+	
+	
+}
+/* cor que aparece quando desliza o mouse sobre o menu */
+li a:hover {
+	background-color: #474747;
+}
+/* Estilos para as dicas de ferramentas */
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+/* se refere a barra cinza do menu e os botoes mude aqui */
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 0%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+/* o que aparece quando desliza o mouse sobre o menu */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Estilos para o corpo da página */
+body {
+	background-color: #112244; /* Fundo azul escuro #112244*/
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+/* Estilos geral da logo, do curso e matriz curricular */
+.header {
+	background-color: #112244;
+	padding: 50px 20px 30px 20px;
+	text-align: left;
+	column-count: 2;
+	font-weight: middle;
+	}
+
+/* Estilos da logo do curso */
+.figure {
+	display: inline-block;
+	height: 350px;
+	width: 550px;
+	border-radius: 30px;
+	padding: 5px 20px 20px 20px;
+	margin-left: 60px;
+}
+	
+/* Estilos geral da logo, do curso e matriz curricular */
+.matrizperiodo {
+	background-color: #112244;
+	padding: 20px 5px 30px 5px;
+	text-align: left;
+	margin-left: 30px;
+}
+
+/* Estilos da matriz curricular */
+.matriz {
+	display: inline-block;
+	font-size: 25px;
+	vertical-align: top;
+	background-color: #576E7A;
+	height: 30px;
+	width: 500px;
+	padding: 12px 80px 12px 20px;
+}
+/* Estilos dos períodos*/
+.periodo {
+	display: inline-block;
+	font-size: 20px;
+	vertical-align: top;
+	height: 20px;
+	padding: 10px 130px 10px 20px;
+	width: 450px;
+}
+.periodos {
+	display: inline-block;
+	font-size: 20px;
+	vertical-align: top;
+	height: 20px;
+	background-color: #576E7A;
+	padding: 10px 130px 10px 20px;
+	width: 450px;
+}
+/* Estilos da linha branca em cima do nome matricule-se*/
+.linha{
+	position: absolute;
+	width: 980px;
+	left: calc(50% - 875.27px/2 + 125.63px);
+	top: 89.84%;
+	bottom: 9.73%;
+	background: #F5F5F5;
+}
+
+/* estilo do texto descricao do curso */
+.article {
+	display: inline-block;
+	padding: 5px 200px 10px 70px;
+	font-size: 18px;
+	vertical-align: top;
+	text-align: justify;
+}
+
+/* estilo do texto matricule-se */
+.matricula {
+	font-size: 15px;
+	vertical-align: top;
+	text-align: center;
+	padding-left: -20px;
+	padding-top: 6px;
+	width: 10px 10px 10px 10px;
+	background-color: #929292;
+	position: absolute;
+	/* posicao da caixa do texto matricule-se */
+	border-radius: 10px;
+	left: 86.2%;
+	right: 3.91%;
+	top: 92.31%;
+	bottom: 3.61%;
+}
+.matricula a{color: #fff;text-decoration: none;}

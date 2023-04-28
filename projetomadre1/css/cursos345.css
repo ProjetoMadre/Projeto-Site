@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* Estilos para o menu */
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0; /*o solid aparece os textos dentro de um bloco*/
+	font-family: 'sofia sans', sans-serif;
+}
+/* define o estilo das caixas que contem os itens do menu */
+/*space-evenly - distribui o texto igualmente*/
+ul {
+	display: flex;
+	justify-content: space-evenly;/*space-around - distribui o texto colocando espaço envolta do elemento*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+/* define o posicionamento das caixas que contem os itens do menu */
+li a {
+	display: block;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	text-decoration: none; /* se tirar fica sublinhado*/
+	
+	font-size: 16px;
+	font-weight: bold; /*negrito*/
+	padding: 12px 25px;
+	height: 10px;
+	width: 150px;
+	
+}
+/* cor que aparece quando desliza o mouse sobre o menu */
+li a:hover {
+	background-color: #474747;
+}
+/* Estilos para as dicas de ferramentas */
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+/* se refere a barra cinza do menu e os botoes mude aqui */
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 0%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+/* o que aparece quando desliza o mouse sobre o menu */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Estilos para o corpo da página */
+body {
+	background-color: #112244; /* Fundo azul escuro #112244*/
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+/* Estilos geral das logo dos curso  */
+.header {
+	background-color: #112244;
+	padding: 80px 30px 30px 30px;
+	height: 320px;
+	width: 1270px;
+	column-count: 4;
+}
+
+.figure{
+		
+	height: 240px;
+	width: 290px;
+	border-radius: 30px;
+	padding: 5px 10px 5px 10px;		
+}
+
+/* Estilos da imagem tela principal do curso */
+.article {
+		background-color: #112244;
+		height: 240px;
+		width: 1300px;
+}
+/* Estilos da imagem tela principal do curso */
+.telaprincipal {
+	
+	position: absolute;
+	width: 1350px;
+	height: 275px;
+	
+}
